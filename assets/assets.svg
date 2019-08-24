@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.0868421"
-     inkscape:cx="296.61017"
-     inkscape:cy="754.6247"
+     inkscape:zoom="0.76851342"
+     inkscape:cx="-498.34904"
+     inkscape:cy="550.04683"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -55,14 +55,51 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="opacity:0.98000004;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.265;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:0.98000004;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.26458333;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect815"
        width="8.2020836"
        height="8.2020826"
-       x="50.149117"
-       y="113.51945"
+       x="-158.23749"
+       y="150.52267"
        inkscape:export-filename="/home/jason/projects/godot/3_1/jams/other/CommunityGameJam_TheGameIsALiar/game/assets/images/white_square_32x32.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
+    <rect
+       inkscape:export-ydpi="96"
+       inkscape:export-xdpi="96"
+       inkscape:export-filename="/home/jason/projects/godot/3_1/jams/other/CommunityGameJam_TheGameIsALiar/game/assets/images/white_square_32x32.png"
+       y="51.849525"
+       x="-263.40454"
+       height="158.485"
+       width="270.66833"
+       id="rect836"
+       style="opacity:0.98000004;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ff00ff;stroke-width:1.05833334;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <circle
+       style="opacity:0.98000004;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:2.64583325;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path838"
+       cx="-77.228226"
+       cy="110.40005"
+       r="11.90625"
+       inkscape:export-filename="/home/jason/projects/godot/3_1/jams/other/CommunityGameJam_TheGameIsALiar/game/assets/images/reveal_ping_wave.png"
+       inkscape:export-xdpi="89.999832"
+       inkscape:export-ydpi="89.999832" />
+    <circle
+       cy="110.40005"
+       cx="-77.228226"
+       id="circle840"
+       style="opacity:0.98000004;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:2.64583325;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       r="15.875" />
+    <circle
+       r="19.84375"
+       style="opacity:0.98000004;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:2.64583325;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="circle842"
+       cx="-77.228226"
+       cy="110.40005" />
+    <circle
+       cy="110.40005"
+       cx="-77.228226"
+       id="circle844"
+       style="opacity:0.98000004;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:2.64583302;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       r="23.8125" />
   </g>
 </svg>

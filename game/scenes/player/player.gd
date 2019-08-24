@@ -1,5 +1,7 @@
 extends KinematicBody2D
 
+var reveal_ping_class = preload("res://scenes/revealPing/revealPing.tscn")
+
 var gravity_vector = Vector2(0, 900)
 var floor_normal = Vector2.UP
 var sloap_slide_stop = 25.0
@@ -27,3 +29,13 @@ func process_horizontal_movement(delta):
 
 func jump():
 	linear_velocity.y -= jump_speed
+
+func reveal_ping():
+	var reveal_ping = reveal_ping_class.instance()
+	get_parent().add_child(reveal_ping)
+	reveal_ping.global_position = global_position
+
+
+
+
+

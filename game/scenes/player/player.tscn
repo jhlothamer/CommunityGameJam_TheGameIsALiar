@@ -18,6 +18,7 @@ shape = SubResource( 1 )
 polygon = PoolVector2Array( -15.7683, -15.7439, -15.7683, 15.8676, 16.0526, 16.1816, 15.9479, -15.7439 )
 
 [node name="stateMachine" parent="." instance=ExtResource( 2 )]
+debug = false
 
 [node name="walking" type="Node" parent="stateMachine"]
 script = ExtResource( 3 )
