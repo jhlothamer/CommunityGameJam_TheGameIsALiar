@@ -12,7 +12,6 @@ var jump_speed = 500
 var linear_velocity = Vector2()
 
 
-
 func process_move_and_slide(delta):
 	linear_velocity += delta * gravity_vector
 

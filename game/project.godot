@@ -19,6 +19,10 @@ config/name="Community Game Jam - The Game is a Liar"
 run/main_scene="res://scenes/levels/testLevel.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+SignalMgr="*res://scenes/util/SignalMgr.gd"
+
 [input]
 
 move_left={
