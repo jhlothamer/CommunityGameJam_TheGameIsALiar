@@ -32,7 +32,8 @@ scale = Vector2( 28.3144, 0.68 )
 texture = ExtResource( 1 )
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
-position = Vector2( 867.368, 292.206 )
+editor/display_folded = true
+position = Vector2( 797.239, 342.854 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
 shape = SubResource( 2 )
@@ -44,7 +45,7 @@ scale = Vector2( 5.88, 0.68 )
 texture = ExtResource( 1 )
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="."]
-position = Vector2( 583.368, 181.206 )
+position = Vector2( 583.368, 265.134 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
 shape = SubResource( 2 )
@@ -56,7 +57,8 @@ scale = Vector2( 5.88, 0.68 )
 texture = ExtResource( 1 )
 
 [node name="StaticBody2D4" type="StaticBody2D" parent="."]
-position = Vector2( 248.305, 180.624 )
+editor/display_folded = true
+position = Vector2( 248.305, 268.956 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
 shape = SubResource( 2 )
@@ -71,10 +73,10 @@ texture = ExtResource( 1 )
 position = Vector2( 414.747, 362.845 )
 max_wave_count = 6
 sound_wave_generate_time = 0.12
-sound_wave_color = Color( 1, 0.843137, 0, 1 )
+sound_wave_color = Color( 0.823529, 0.509804, 0.509804, 1 )
 
 [node name="exitDoor" parent="." instance=ExtResource( 4 )]
-position = Vector2( 245.547, 146.036 )
+position = Vector2( 245.547, 214.851 )
 
 [node name="fatalFallArea" parent="." instance=ExtResource( 5 )]
 position = Vector2( 36.4935, 528.488 )
@@ -90,6 +92,6 @@ position = Vector2( 1326.29, 553.095 )
 
 [node name="fakePlatform" type="Sprite" parent="."]
 material = ExtResource( 6 )
-position = Vector2( 369.315, 308.727 )
-scale = Vector2( 7.36, 0.64 )
+position = Vector2( 275.81, 346.328 )
+scale = Vector2( 5.16, 0.64 )
 texture = ExtResource( 1 )

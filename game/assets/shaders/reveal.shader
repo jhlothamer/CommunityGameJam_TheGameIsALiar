@@ -14,7 +14,10 @@ vec3 get_reveal_color() {
 	/*if(reveal_color != vec3(1.0,1.0,1.0)) {
 		return reveal_color;
 	}*/
-	return vec3(1.0, 0.843, 0.0);
+	//original gold/yellow color
+	//return vec3(1.0, 0.843, 0.0);
+	//'pink'
+	return vec3(0.8235, 0.5098, 0.5098);
 }
 
 void fragment() {
