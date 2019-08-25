@@ -16,12 +16,16 @@ _global_script_class_icons={
 [application]
 
 config/name="Community Game Jam - The Game is a Liar"
-run/main_scene="res://scenes/levels/testLevel.tscn"
+run/main_scene="res://scenes/title/title.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
 SignalMgr="*res://scenes/util/SignalMgr.gd"
+
+[debug]
+
+gdscript/warnings/enable=false
 
 [input]
 
