@@ -1,19 +1,34 @@
 extends Node2D
 
+var sound_wave_class = preload("res://scenes/revealPing/soundWave.tscn")
+
+var wave_count : int = 0
+export var max_wave_count : int = 3
+export var sound_wave_generate_time : float = 1.0
+export var sound_wave_width : float = 20.0
+export var sound_wave_color : Color = Color.yellow
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	var duration = 2.0
-	var tween = $Tween
-	tween.interpolate_property($Sprite, "scale", Vector2(1,1), Vector2(10,10), duration, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-	tween.interpolate_property($Sprite2, "scale", Vector2(1.5,1.5), Vector2(12.5,12.5), duration, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-	tween.interpolate_property($Sprite3, "scale", Vector2(2,2), Vector2(17,17), duration, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-
-	tween.interpolate_property($Light2D, "texture_scale", 1, 10, duration, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-	tween.interpolate_property($Light2D2, "texture_scale", 1.5, 12.5, duration, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-	tween.interpolate_property($Light2D3, "texture_scale", 2, 17, duration, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-	tween.start()
-
-
+	create_sound_wave()
+	$soundWaveGenerateTimer.start(sound_wave_generate_time)
 
 func _on_Tween_tween_all_completed():
 	queue_free()
+
+func create_sound_wave():
+	var sound_wave = sound_wave_class.instance()
+	sound_wave.width = sound_wave_width
+	sound_wave.color = sound_wave_color
+	add_child(sound_wave)
+	sound_wave.connect("SoundWaveComplete", self, "on_SoundWaveComplete")
+	wave_count+=1
+
+func on_SoundWaveComplete():
+	if get_child_count() <= 1:
+		queue_free()
+
+func _on_soundWaveGenerateTimer_timeout():
+	if wave_count >= max_wave_count:
+		return
+	create_sound_wave()

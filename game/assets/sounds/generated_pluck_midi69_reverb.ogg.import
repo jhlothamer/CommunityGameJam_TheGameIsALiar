@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/generated_pluck_midi69_reverb.ogg-1b2c3c95114416f7057ca5354e5af798.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/generated_pluck_midi69_reverb.ogg"
+dest_files=[ "res://.import/generated_pluck_midi69_reverb.ogg-1b2c3c95114416f7057ca5354e5af798.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

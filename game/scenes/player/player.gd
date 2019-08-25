@@ -8,6 +8,11 @@ var sloap_slide_stop = 25.0
 var walk_speed = 500
 var jump_speed = 500
 
+export var max_wave_count : int = 3
+export var sound_wave_generate_time : float = 1.0
+export var sound_wave_width : float = 20.0
+export var sound_wave_color : Color = Color.yellow
+
 
 var linear_velocity = Vector2()
 
@@ -31,6 +36,10 @@ func jump():
 
 func reveal_ping():
 	var reveal_ping = reveal_ping_class.instance()
+	reveal_ping.sound_wave_color = sound_wave_color
+	reveal_ping.sound_wave_generate_time = sound_wave_generate_time
+	reveal_ping.sound_wave_width = sound_wave_width
+	reveal_ping.max_wave_count = max_wave_count
 	get_parent().add_child(reveal_ping)
 	reveal_ping.global_position = global_position
 
