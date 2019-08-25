@@ -1,0 +1,62 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/hud/pause.gd" type="Script" id=1]
+[ext_resource path="res://assets/fonts/label_large.tres" type="DynamicFont" id=2]
+
+[node name="pause" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -362.5
+margin_top = -58.0
+margin_right = 362.5
+margin_bottom = 58.0
+custom_constants/separation = 20
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+margin_right = 725.0
+margin_bottom = 45.0
+custom_fonts/font = ExtResource( 2 )
+text = "Pause"
+align = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 65.0
+margin_right = 725.0
+margin_bottom = 116.0
+custom_constants/separation = 20
+
+[node name="Continue" type="Button" parent="VBoxContainer/HBoxContainer"]
+margin_right = 280.0
+margin_bottom = 51.0
+rect_min_size = Vector2( 280, 0 )
+custom_fonts/font = ExtResource( 2 )
+text = "Continue"
+
+[node name="restartBtn" type="Button" parent="VBoxContainer/HBoxContainer"]
+margin_left = 300.0
+margin_right = 580.0
+margin_bottom = 51.0
+rect_min_size = Vector2( 280, 0 )
+custom_fonts/font = ExtResource( 2 )
+text = "Restart"
+
+[node name="quitBtn" type="Button" parent="VBoxContainer/HBoxContainer"]
+margin_left = 600.0
+margin_right = 725.0
+margin_bottom = 51.0
+rect_min_size = Vector2( 125, 0 )
+custom_fonts/font = ExtResource( 2 )
+text = "Quit"
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Continue" to="." method="_on_Continue_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/restartBtn" to="." method="_on_restartBtn_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/quitBtn" to="." method="_on_quitBtn_pressed"]

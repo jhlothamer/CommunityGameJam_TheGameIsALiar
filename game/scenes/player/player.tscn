@@ -1,14 +1,17 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scenes/player/player.gd" type="Script" id=1]
 [ext_resource path="res://scenes/stateMachine/stateMachine.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/player/states/walking.gd" type="Script" id=3]
 [ext_resource path="res://scenes/player/states/jumping.gd" type="Script" id=4]
+[ext_resource path="res://scenes/hud/hud.tscn" type="PackedScene" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 16, 16 )
 
-[node name="player" type="KinematicBody2D"]
+[node name="player" type="KinematicBody2D" groups=[
+"player",
+]]
 script = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -29,3 +32,5 @@ script = ExtResource( 4 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
+
+[node name="hud" parent="." instance=ExtResource( 5 )]
