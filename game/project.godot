@@ -27,6 +27,10 @@ SignalMgr="*res://scenes/util/SignalMgr.gd"
 
 gdscript/warnings/enable=false
 
+[display]
+
+window/stretch/shrink=1.5
+
 [input]
 
 ui_cancel={

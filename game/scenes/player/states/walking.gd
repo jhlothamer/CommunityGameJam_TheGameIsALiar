@@ -7,5 +7,9 @@ func update(delta):
 		return
 	if Input.is_action_just_pressed("reveal_ping"):
 		host.reveal_ping()
+	if host.linear_velocity.x == 0.0:
+		host.play_anim("idle")
+	else:
+		host.play_anim("walk")
 	host.process_horizontal_movement(delta)
 	host.process_move_and_slide(delta)
