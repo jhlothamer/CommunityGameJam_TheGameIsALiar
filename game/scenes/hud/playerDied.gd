@@ -10,4 +10,4 @@ func _on_restartBtn_pressed():
 
 
 func _on_quitBtn_pressed():
-	get_tree().quit()
+	get_tree().change_scene("res://scenes/title/title.tscn")
