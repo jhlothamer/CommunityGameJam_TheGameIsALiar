@@ -71,9 +71,6 @@ texture = ExtResource( 1 )
 
 [node name="player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 414.747, 362.845 )
-max_wave_count = 6
-sound_wave_generate_time = 0.12
-sound_wave_color = Color( 0.823529, 0.509804, 0.509804, 1 )
 
 [node name="exitDoor" parent="." instance=ExtResource( 4 )]
 position = Vector2( 245.547, 214.851 )

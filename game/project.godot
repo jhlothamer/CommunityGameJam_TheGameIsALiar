@@ -31,6 +31,10 @@ gdscript/warnings/enable=false
 
 window/stretch/shrink=1.5
 
+[editor_plugins]
+
+enabled=PoolStringArray( "vnen.tiled_importer" )
+
 [input]
 
 ui_cancel={
@@ -72,4 +76,9 @@ reveal_ping={
 quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true
 vram_compression/import_etc2=false
+environment/default_clear_color=Color( 0.596078, 0.701961, 0.74902, 1 )
 environment/default_environment="res://default_env.tres"
+
+[tiled_importer]
+
+enable_json_format=true
