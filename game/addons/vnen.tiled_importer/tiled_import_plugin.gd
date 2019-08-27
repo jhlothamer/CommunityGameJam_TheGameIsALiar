@@ -67,7 +67,7 @@ func get_import_options(preset):
 		},
 		{
 			"name": "tile_metadata",
-			"default_value": false
+			"default_value": true
 		},
 		{
 			"name": "uv_clip",
@@ -98,7 +98,7 @@ func get_import_options(preset):
 		},
 		{
 			"name": "post_import_script",
-			"default_value": "",
+			"default_value": "res://scenes/tileMapPrepper/post_import.gd",
 			"property_hint": PROPERTY_HINT_FILE,
 			"hint_string": "*.gd;GDScript"
 		}
