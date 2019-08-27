@@ -21,6 +21,7 @@ config/icon="res://icon.png"
 
 [autoload]
 
+MusicController="*res://scenes/util/MusicController.tscn"
 SignalMgr="*res://scenes/util/SignalMgr.gd"
 
 [debug]
