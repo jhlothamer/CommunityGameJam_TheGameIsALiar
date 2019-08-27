@@ -17,10 +17,10 @@ var frames = {
 	"landing" : [10]
 }
 
-export var max_wave_count : int = 3
-export var sound_wave_generate_time : float = 1.0
+export var max_wave_count : int = 6
+export var sound_wave_generate_time : float = .12
 export var sound_wave_width : float = 20.0
-export var sound_wave_color : Color = Color.yellow
+export var sound_wave_color : Color = Color("d28282")
 
 
 var linear_velocity = Vector2()
