@@ -10,13 +10,6 @@ var jump_speed = 450
 #positive = right, negative = left
 var face_direction : int = 1
 
-var frames = {
-	"idle": [0,1,2,3,4],
-	"walking": [5,6,7,8],
-	"jumping" : [9],
-	"landing" : [10]
-}
-
 export var max_wave_count : int = 6
 export var sound_wave_generate_time : float = .12
 export var sound_wave_width : float = 20.0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/bard dieing low growl.ogg-8c97b13ed9367237e2b5fa5b235e3fae.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/bard dieing low growl.ogg"
+dest_files=[ "res://.import/bard dieing low growl.ogg-8c97b13ed9367237e2b5fa5b235e3fae.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

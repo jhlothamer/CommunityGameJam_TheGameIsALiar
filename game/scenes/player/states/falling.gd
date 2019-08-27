@@ -5,6 +5,7 @@ func enter():
 
 func update(delta):
 	if host.is_on_floor():
+		$landingSound.play()
 		change_state("walking")
 		return
 	host.process_horizontal_movement(delta)
