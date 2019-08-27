@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/blade extend.ogg-7930ca9acd2ec04977cb347473284338.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/blade extend.ogg"
+dest_files=[ "res://.import/blade extend.ogg-7930ca9acd2ec04977cb347473284338.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

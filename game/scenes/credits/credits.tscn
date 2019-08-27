@@ -48,7 +48,14 @@ margin_right = 450.0
 margin_bottom = 200.0
 rect_min_size = Vector2( 900, 400 )
 custom_fonts/font = ExtResource( 3 )
-text = "credits go here!"
+text = "Created by:
+
+Lindsey \"Kit\" Kitsis                    ~ Art
+George \"The Maestro\" Meisinger ~ Programming & Music
+Jason \"Hammer\" Lothamer          ~ Programming & Sound
+
+Font Alagard by Pix3m ((https://www.deviantart.com/pix3m)
+https://opengameart.org/content/pixel-fonts-by-pix3m"
 readonly = true
 context_menu_enabled = false
 wrap_enabled = true
