@@ -67,7 +67,7 @@ func get_import_options(preset):
 		},
 		{
 			"name": "tile_metadata",
-			"default_value": false
+			"default_value": true
 		},
 		{
 			"name": "uv_clip",

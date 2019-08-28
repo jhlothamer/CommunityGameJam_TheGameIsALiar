@@ -21,6 +21,7 @@ config/icon="res://icon.png"
 
 [autoload]
 
+MusicController="*res://scenes/util/MusicController.tscn"
 SignalMgr="*res://scenes/util/SignalMgr.gd"
 
 [debug]
@@ -29,6 +30,7 @@ gdscript/warnings/enable=false
 
 [display]
 
+window/stretch/aspect="keep"
 window/stretch/shrink=1.5
 
 [editor_plugins]
