@@ -1,7 +1,14 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scenes/title/title.gd" type="Script" id=1]
 [ext_resource path="res://assets/fonts/label_large.tres" type="DynamicFont" id=2]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://assets/fonts/alagard_by_pix3m-d6awiwp.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 120
+font_data = SubResource( 1 )
 
 [node name="title" type="Control"]
 anchor_right = 1.0
@@ -11,15 +18,31 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Label" type="Label" parent="."]
-margin_left = 81.7019
-margin_top = 77.0815
-margin_right = 387.702
-margin_bottom = 218.081
+[node name="BobtheBardLbl" type="Label" parent="."]
+margin_left = 63.247
+margin_top = 50.4244
+margin_right = 369.247
+margin_bottom = 191.424
 custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 text = "Bob the Bard
-and the 
-Lyre of Truth"
+and the"
+align = 1
+
+[node name="LyreofTruthLbl" type="Label" parent="."]
+margin_left = 119.612
+margin_top = 184.273
+margin_right = 579.612
+margin_bottom = 529.273
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.988235, 0.788235, 0, 1 )
+custom_colors/font_color_shadow = Color( 0.4, 0.25098, 0.25098, 1 )
+custom_constants/shadow_offset_x = 7
+custom_constants/shadow_offset_y = 6
+text = "Lyre 
+of 
+Truth"
 align = 1
 
 [node name="buttons" type="VBoxContainer" parent="."]
