@@ -25,7 +25,7 @@ anchor_bottom = 1.0
 margin_left = -220.0
 margin_top = -70.0
 margin_right = -20.0
-margin_bottom = -20.0
+margin_bottom = -19.0
 rect_min_size = Vector2( 200, 0 )
 
 [node name="backBtn" type="Button" parent="MarginContainer"]
