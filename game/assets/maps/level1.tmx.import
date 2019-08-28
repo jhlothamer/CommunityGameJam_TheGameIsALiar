@@ -2,11 +2,13 @@
 
 importer="vnen.tiled_importer"
 type="PackedScene"
-valid=false
+path="res://.import/level1.tmx-9065d0d7b5eb2a8a2de150e3e48f39da.scn"
 
 [deps]
 
 source_file="res://assets/maps/level1.tmx"
+dest_files=[ "res://.import/level1.tmx-9065d0d7b5eb2a8a2de150e3e48f39da.scn" ]
+
 [params]
 
 custom_properties=true
@@ -17,4 +19,4 @@ collision_layer=1
 embed_internal_images=false
 save_tiled_properties=false
 add_background=true
-post_import_script="res://scenes/tileMapPrepper/tileMapPrepper.gd"
+post_import_script=""
