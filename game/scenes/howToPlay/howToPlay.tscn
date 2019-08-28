@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scenes/howToPlay/howToPlay.gd" type="Script" id=1]
 [ext_resource path="res://assets/fonts/label_large.tres" type="DynamicFont" id=2]
+[ext_resource path="res://assets/styles/button_focus.tres" type="StyleBox" id=3]
+[ext_resource path="res://assets/styles/button_normal.tres" type="StyleBox" id=4]
 
 [node name="howToPlay" type="Control"]
 anchor_right = 1.0
@@ -30,6 +32,8 @@ margin_right = 200.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+custom_styles/focus = ExtResource( 3 )
+custom_styles/normal = ExtResource( 4 )
 custom_fonts/font = ExtResource( 2 )
 text = "Play"
 
@@ -45,6 +49,8 @@ rect_min_size = Vector2( 200, 0 )
 [node name="backBtn" type="Button" parent="MarginContainer2"]
 margin_right = 200.0
 margin_bottom = 51.0
+custom_styles/focus = ExtResource( 3 )
+custom_styles/normal = ExtResource( 4 )
 custom_fonts/font = ExtResource( 2 )
 text = "Back"
 [connection signal="pressed" from="MarginContainer/playBtn" to="." method="_on_playBtn_pressed"]

@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scenes/hud/pause.gd" type="Script" id=1]
 [ext_resource path="res://assets/fonts/label_large.tres" type="DynamicFont" id=2]
+[ext_resource path="res://assets/styles/button_focus.tres" type="StyleBox" id=3]
+[ext_resource path="res://assets/styles/button_normal.tres" type="StyleBox" id=4]
 
 [node name="pause" type="Control"]
 anchor_right = 1.0
@@ -23,7 +25,7 @@ margin_bottom = 58.0
 custom_constants/separation = 20
 
 [node name="Label" type="Label" parent="VBoxContainer"]
-margin_right = 735.0
+margin_right = 725.0
 margin_bottom = 45.0
 custom_fonts/font = ExtResource( 2 )
 text = "Pause"
@@ -31,30 +33,36 @@ align = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 65.0
-margin_right = 735.0
-margin_bottom = 116.0
+margin_right = 725.0
+margin_bottom = 110.0
 custom_constants/separation = 20
 
 [node name="Continue" type="Button" parent="VBoxContainer/HBoxContainer"]
 margin_right = 280.0
-margin_bottom = 51.0
+margin_bottom = 45.0
 rect_min_size = Vector2( 280, 0 )
+custom_styles/focus = ExtResource( 3 )
+custom_styles/normal = ExtResource( 4 )
 custom_fonts/font = ExtResource( 2 )
 text = "Continue"
 
 [node name="restartBtn" type="Button" parent="VBoxContainer/HBoxContainer"]
 margin_left = 300.0
 margin_right = 580.0
-margin_bottom = 51.0
+margin_bottom = 45.0
 rect_min_size = Vector2( 280, 0 )
+custom_styles/focus = ExtResource( 3 )
+custom_styles/normal = ExtResource( 4 )
 custom_fonts/font = ExtResource( 2 )
 text = "Restart"
 
 [node name="quitBtn" type="Button" parent="VBoxContainer/HBoxContainer"]
 margin_left = 600.0
-margin_right = 735.0
-margin_bottom = 51.0
+margin_right = 725.0
+margin_bottom = 45.0
 rect_min_size = Vector2( 125, 0 )
+custom_styles/focus = ExtResource( 3 )
+custom_styles/normal = ExtResource( 4 )
 custom_fonts/font = ExtResource( 2 )
 text = "Menu"
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/Continue" to="." method="_on_Continue_pressed"]

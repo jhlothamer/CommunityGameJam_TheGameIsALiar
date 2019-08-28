@@ -1,7 +1,11 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scenes/title/title.gd" type="Script" id=1]
-[ext_resource path="res://assets/fonts/label_large.tres" type="DynamicFont" id=2]
+[ext_resource path="res://assets/images/190824_back_ground_600x800_tile_set.png" type="Texture" id=2]
+[ext_resource path="res://assets/fonts/label_large.tres" type="DynamicFont" id=3]
+[ext_resource path="res://assets/images/lyre_logo_sm.png" type="Texture" id=4]
+[ext_resource path="res://assets/styles/button_focus.tres" type="StyleBox" id=5]
+[ext_resource path="res://assets/styles/button_normal.tres" type="StyleBox" id=6]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://assets/fonts/alagard_by_pix3m-d6awiwp.ttf"
@@ -18,19 +22,39 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="190824_back_ground_600x800_tile_set" type="Sprite" parent="."]
+position = Vector2( 515.873, 12.6871 )
+scale = Vector2( 1.32, 1.5 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="190824_back_ground_600x800_tile_set2" type="Sprite" parent="."]
+position = Vector2( 515.873, 559.065 )
+scale = Vector2( 1.32, 1.5 )
+texture = ExtResource( 2 )
+offset = Vector2( 0, -100 )
+region_enabled = true
+region_rect = Rect2( -3.29749, 1470.57, 806.889, 309.541 )
+__meta__ = {
+"_edit_lock_": true
+}
+
 [node name="BobtheBardLbl" type="Label" parent="."]
-margin_left = 63.247
-margin_top = 50.4244
-margin_right = 369.247
-margin_bottom = 191.424
-custom_fonts/font = ExtResource( 2 )
+visible = false
+margin_left = 143.218
+margin_top = 70.9298
+margin_right = 449.218
+margin_bottom = 211.929
+custom_fonts/font = ExtResource( 3 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-text = "Bob the Bard
-and the"
+text = "The"
 align = 1
 
 [node name="LyreofTruthLbl" type="Label" parent="."]
+visible = false
 margin_left = 119.612
 margin_top = 184.273
 margin_right = 579.612
@@ -45,6 +69,14 @@ of
 Truth"
 align = 1
 
+[node name="lyre_logo_sm" type="Sprite" parent="."]
+position = Vector2( 382.587, 312.067 )
+scale = Vector2( 4, 4 )
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
 [node name="buttons" type="VBoxContainer" parent="."]
 anchor_left = 1.0
 anchor_top = 1.0
@@ -58,13 +90,18 @@ rect_min_size = Vector2( 180, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_constants/separation = 20
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="playBtn" type="Button" parent="buttons"]
 margin_right = 180.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = ExtResource( 2 )
+custom_styles/focus = ExtResource( 5 )
+custom_styles/normal = ExtResource( 6 )
+custom_fonts/font = ExtResource( 3 )
 text = "Play"
 clip_text = true
 
@@ -74,7 +111,9 @@ margin_right = 180.0
 margin_bottom = 122.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = ExtResource( 2 )
+custom_styles/focus = ExtResource( 5 )
+custom_styles/normal = ExtResource( 6 )
+custom_fonts/font = ExtResource( 3 )
 custom_constants/hseparation = 0
 text = "Credits"
 clip_text = true
@@ -83,7 +122,9 @@ clip_text = true
 margin_top = 142.0
 margin_right = 180.0
 margin_bottom = 193.0
-custom_fonts/font = ExtResource( 2 )
+custom_styles/focus = ExtResource( 5 )
+custom_styles/normal = ExtResource( 6 )
+custom_fonts/font = ExtResource( 3 )
 text = "Quit"
 clip_text = true
 [connection signal="pressed" from="buttons/playBtn" to="." method="_on_playBtn_pressed"]
