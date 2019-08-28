@@ -98,7 +98,7 @@ func get_import_options(preset):
 		},
 		{
 			"name": "post_import_script",
-			"default_value": "res://scenes/tileMapPrepper/post_import.gd",
+			"default_value": "",
 			"property_hint": PROPERTY_HINT_FILE,
 			"hint_string": "*.gd;GDScript"
 		}
