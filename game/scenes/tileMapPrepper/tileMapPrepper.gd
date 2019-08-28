@@ -56,3 +56,6 @@ func get_level_bottom():
 			var rect = tile_map.get_used_rect()
 			var depth = rect.y * tile_map.cell_size.y
 			return depth
+			
+func post_import(scene):
+	return scene
