@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.2" tiledversion="1.2.4" name="lyre_of_truth" tilewidth="16" tileheight="16" tilecount="400" columns="20">
- <image source="tileset.png" width="320" height="320"/>
+<tileset name="lyre_of_truth" tilewidth="16" tileheight="16" tilecount="400" columns="20">
+ <image source="../../../assets/tileset.png" width="320" height="320"/>
  <tile id="0">
   <objectgroup draworder="index">
    <object id="1" x="0" y="0" width="16" height="16"/>

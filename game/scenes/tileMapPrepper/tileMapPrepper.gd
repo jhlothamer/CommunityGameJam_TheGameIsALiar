@@ -48,3 +48,18 @@ func process_fake_tiles(tile_map : TileMap):
 	tile_map.material = fake_tile_material
 	tile_map.collision_layer = 2
 	tile_map.collision_mask = 2
+
+func get_level_bottom():
+	var depth = 0
+	var tile_maps = get_tile_maps()
+	for tile_map in tile_maps:
+		if tile_map is TileMap:
+			var rect = tile_map.get_used_rect()
+			var tile_height = tile_map.cell_size.y
+			var map_depth = (rect.position.y * tile_height) + (rect.size.y * tile_height)
+			if map_depth > depth:
+				depth = map_depth
+	return depth
+			
+func post_import(scene):
+	return scene

@@ -5,7 +5,11 @@
 
 [node name="level" index="0" instance=ExtResource( 1 )]
 
-[node name="tileMapPrepper" parent="." index="0"]
+[node name="ParallaxBackground" parent="." index="0"]
+offset = Vector2( 0, 220 )
+transform = Transform2D( 1, 0, 0, 1, 0, 220 )
+
+[node name="tileMapPrepper" parent="." index="1"]
 tile_map_node = NodePath("../testLevel1")
 
 [node name="testLevel1" parent="." index="3" instance=ExtResource( 2 )]
