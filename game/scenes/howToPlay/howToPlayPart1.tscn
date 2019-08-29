@@ -1,35 +1,32 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scenes/howToPlay/howToPlayPart1.gd" type="Script" id=1]
 [ext_resource path="res://assets/fonts/text_regular.tres" type="DynamicFont" id=2]
 [ext_resource path="res://assets/maps/howToPlay1.tmx" type="PackedScene" id=3]
 [ext_resource path="res://scenes/player/player.tscn" type="PackedScene" id=4]
 
-[sub_resource type="StyleBoxFlat" id=2]
-bg_color = Color( 0.596078, 0.701961, 0.74902, 0 )
-
 [sub_resource type="StyleBoxFlat" id=1]
-bg_color = Color( 0.647059, 0.392157, 0, 1 )
+bg_color = Color( 0.596078, 0.701961, 0.74902, 0 )
 
 [node name="howToPlayPart1" type="Panel"]
 margin_right = 800.0
 margin_bottom = 272.0
-custom_styles/panel = SubResource( 2 )
+custom_styles/panel = SubResource( 1 )
 script = ExtResource( 1 )
 
-[node name="instructions" type="TextEdit" parent="."]
+[node name="instructions" type="Label" parent="."]
 anchor_bottom = 1.0
 margin_right = 500.0
 rect_min_size = Vector2( 500, 100 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_styles/read_only = SubResource( 1 )
 custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.54902, 0.286275, 0.0980392, 1 )
+custom_colors/font_color_shadow = Color( 0.670588, 0.513726, 0.27451, 1 )
 text = "Bad Baron Bart has lade a trap for thee
 He has made what is true disappear
 And created false what you see"
-readonly = true
-context_menu_enabled = false
+valign = 1
 
 [node name="howToPlay1" parent="." instance=ExtResource( 3 )]
 position = Vector2( 508.807, 2.65002 )

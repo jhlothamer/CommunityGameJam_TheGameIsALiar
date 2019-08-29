@@ -16,6 +16,7 @@ export var sound_wave_width : float = 20.0
 export var sound_wave_color : Color = Color("d28282")
 
 export var disabled : bool
+export var mute: bool
 
 var linear_velocity = Vector2()
 
@@ -50,8 +51,7 @@ func reveal_ping():
 	reveal_ping.sound_wave_generate_time = sound_wave_generate_time
 	reveal_ping.sound_wave_width = sound_wave_width
 	reveal_ping.max_wave_count = max_wave_count
-	if disabled:
-		reveal_ping.mute = true
+	reveal_ping.mute = mute
 	get_parent().add_child(reveal_ping)
 	reveal_ping.global_position = global_position
 
