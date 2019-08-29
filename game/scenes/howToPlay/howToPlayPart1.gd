@@ -39,15 +39,19 @@ func _on_pingTimer_timeout():
 func part1():
 	current_part += 1
 	var duration = 4.0
-	$Tween.interpolate_property(invisible_layer, "modulate", Color(1.0,1.0,1.0,1.0), Color(1.0,1.0,1.0,0.0), duration, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-	$Tween.interpolate_property(fake_layer, "modulate", Color(1.0,1.0,1.0,0.0), Color(1.0,1.0,1.0,1.0), duration, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+	$Tween.interpolate_property(invisible_layer, "modulate", color_visible, color_invisible, duration, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+	$Tween.interpolate_property(fake_layer, "modulate", color_invisible, color_visible, duration, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 	$Tween.start()
 	#$player.start_alarm()
+	$fadeInOutSound.play()
 
 func part2() :
 	current_part += 1
+	$fadeInOutSound.stop()
 	$Tween.stop_all()
-	$instructions.text = "But, noble bard, your courage you must pluck\r\nFor the Lyre of Truth will guide way\r\nWith every note that is struck"
+	invisible_layer.modulate = color_invisible
+	fake_layer.modulate = color_visible
+	$instructions.text = "But, noble bard, thy courage thou must pluck\r\nFor the Lyre of Truth will guide the way\r\nWith every note that is struck"
 
 func part3():
 	current_part += 1
@@ -58,10 +62,12 @@ func part3():
 	invisible_layer.material = invisible_tile_material
 	fake_layer.material = fake_tile_material
 	$player.reveal_ping()
+	$player.play_anim("play")
 
 func part4():
 	current_part += 1
 	$pingTimer.stop()
+	$player.play_anim("idle")
 	$instructions.text = "Good luck!"
 	$instructions.align = Label.ALIGN_CENTER
 

@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scenes/howToPlay/howToPlayPart1.gd" type="Script" id=1]
 [ext_resource path="res://assets/fonts/text_regular.tres" type="DynamicFont" id=2]
 [ext_resource path="res://assets/maps/howToPlay1.tmx" type="PackedScene" id=3]
 [ext_resource path="res://scenes/player/player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/sounds/noisy_fade_out.ogg" type="AudioStream" id=5]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.596078, 0.701961, 0.74902, 0 )
@@ -24,8 +25,8 @@ custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color = Color( 0.54902, 0.286275, 0.0980392, 1 )
 custom_colors/font_color_shadow = Color( 0.670588, 0.513726, 0.27451, 1 )
 text = "Bad Baron Bart has lade a trap for thee
-He has made what is true disappear
-And created false what you see"
+He hath made what is true disappear
+And created false what thou see"
 valign = 1
 
 [node name="howToPlay1" parent="." instance=ExtResource( 3 )]
@@ -39,4 +40,8 @@ disabled = true
 
 [node name="pingTimer" type="Timer" parent="."]
 wait_time = 6.0
+
+[node name="fadeInOutSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -10.0
 [connection signal="timeout" from="pingTimer" to="." method="_on_pingTimer_timeout"]
