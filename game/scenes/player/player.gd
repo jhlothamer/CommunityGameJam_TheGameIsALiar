@@ -15,9 +15,14 @@ export var sound_wave_generate_time : float = .12
 export var sound_wave_width : float = 20.0
 export var sound_wave_color : Color = Color("d28282")
 
+export var disabled : bool
 
 var linear_velocity = Vector2()
 
+func _ready():
+	if disabled:
+		$stateMachine.disabled = true
+		$Camera2D.current = false
 
 func process_move_and_slide(delta):
 	linear_velocity += delta * gravity_vector
@@ -45,6 +50,8 @@ func reveal_ping():
 	reveal_ping.sound_wave_generate_time = sound_wave_generate_time
 	reveal_ping.sound_wave_width = sound_wave_width
 	reveal_ping.max_wave_count = max_wave_count
+	if disabled:
+		reveal_ping.mute = true
 	get_parent().add_child(reveal_ping)
 	reveal_ping.global_position = global_position
 
@@ -53,4 +60,14 @@ func play_anim(anim_name):
 		$AnimationPlayer.play(anim_name)
 
 
+func start_alarm():
+	$alarmBlinkTimer.start()
+	$AlarmLbl.visible = true
 
+func stop_alarm():
+	$alarmBlinkTimer.stop()
+	$AlarmLbl.visible = false
+
+
+func _on_alarmBlinkTimer_timeout():
+	$AlarmLbl.visible = !$AlarmLbl.visible

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lyre_logo_sm.png-25f7c87eacc7bb424acd13155123af86.stex"
+path="res://.import/lyre_logo_sprite.png-85669a19465f503685d46f92f7205d39.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/lyre_logo_sm.png"
-dest_files=[ "res://.import/lyre_logo_sm.png-25f7c87eacc7bb424acd13155123af86.stex" ]
+source_file="res://assets/images/lyre_logo_sprite.png"
+dest_files=[ "res://.import/lyre_logo_sprite.png-85669a19465f503685d46f92f7205d39.stex" ]
 
 [params]
 
