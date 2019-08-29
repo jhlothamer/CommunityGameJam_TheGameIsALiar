@@ -6,7 +6,7 @@ export var width : float = 20.0
 export var color : Color = Color.yellow
 export var speed : float = 400.0
 export var max_radius : float = 600.0
-
+export var mute : bool
 var current_radius : float = radius
 var active : bool = true
 
@@ -17,8 +17,10 @@ func _ready():
 	$Polygon2D2.polygon = create_polygon_half(-1)
 	$Polygon2D.modulate = color
 	$Polygon2D2.modulate = color
-	randomize()
-	$AudioStreamPlayer2D.pitch_scale = rand_range(.6, 1.6)
+	if !mute:
+		randomize()
+		$AudioStreamPlayer2D.pitch_scale = rand_range(.6, 1.6)
+		$AudioStreamPlayer2D.play()
 
 
 func create_polygon_half(y_direction : int = 1):

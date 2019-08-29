@@ -7,6 +7,7 @@ export var max_wave_count : int = 3
 export var sound_wave_generate_time : float = 1.0
 export var sound_wave_width : float = 20.0
 export var sound_wave_color : Color = Color.yellow
+export var mute : bool
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -20,6 +21,7 @@ func create_sound_wave():
 	var sound_wave = sound_wave_class.instance()
 	sound_wave.width = sound_wave_width
 	sound_wave.color = sound_wave_color
+	sound_wave.mute = mute
 	add_child(sound_wave)
 	sound_wave.connect("SoundWaveComplete", self, "on_SoundWaveComplete")
 	wave_count+=1

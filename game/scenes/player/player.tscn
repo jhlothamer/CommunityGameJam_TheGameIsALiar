@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://scenes/player/player.gd" type="Script" id=1]
 [ext_resource path="res://assets/images/bard.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://scenes/player/states/falling.gd" type="Script" id=7]
 [ext_resource path="res://assets/sounds/landing1.ogg" type="AudioStream" id=8]
 [ext_resource path="res://scenes/hud/hud.tscn" type="PackedScene" id=9]
+[ext_resource path="res://assets/fonts/text_regular.tres" type="DynamicFont" id=10]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 9.12811, 15.2848 )
@@ -143,4 +144,18 @@ anims/idle = SubResource( 3 )
 anims/jump = SubResource( 4 )
 anims/play = SubResource( 5 )
 anims/walk = SubResource( 6 )
+
+[node name="AlarmLbl" type="Label" parent="."]
+visible = false
+margin_left = -20.0
+margin_top = -40.0
+margin_right = 20.0
+margin_bottom = -17.0
+custom_fonts/font = ExtResource( 10 )
+custom_colors/font_color = Color( 0.921569, 1, 0, 1 )
+text = "??!!"
+align = 1
+
+[node name="alarmBlinkTimer" type="Timer" parent="."]
 [connection signal="timeout" from="stateMachine/walking/pingDebounceTimer" to="stateMachine/walking" method="_on_pingDebounceTimer_timeout"]
+[connection signal="timeout" from="alarmBlinkTimer" to="." method="_on_alarmBlinkTimer_timeout"]
