@@ -5,7 +5,7 @@ func _ready():
 
 func _on_playBtn_pressed():
 	if $howToPlayPart1.is_done:
-		get_tree().change_scene("res://scenes/levels/testLevel.tscn")
+		get_tree().change_scene("res://scenes/levels/testTileLevel1.tscn")
 	else:
 		$howToPlayPart1.next()
 		if $howToPlayPart1.is_done:

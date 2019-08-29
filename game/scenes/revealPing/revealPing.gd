@@ -13,8 +13,11 @@ export var pitch_scale_increment : float = .2
 
 var current_pitch_scale : float
 
+signal RevealPingComplete()
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	SignalMgr.register_publisher(self, "RevealPingComplete")
 	current_pitch_scale = pitch_scale_start
 	create_sound_wave()
 	$soundWaveGenerateTimer.start(sound_wave_generate_time)
@@ -34,8 +37,12 @@ func create_sound_wave():
 	wave_count+=1
 
 func on_SoundWaveComplete():
-	if get_child_count() <= 1:
-		queue_free()
+	if get_child_count() <= 2:
+		call_deferred("emit_RevealPingComplete")
+
+func emit_RevealPingComplete():
+	emit_signal("RevealPingComplete")
+	queue_free()
 
 func _on_soundWaveGenerateTimer_timeout():
 	if wave_count >= max_wave_count:
