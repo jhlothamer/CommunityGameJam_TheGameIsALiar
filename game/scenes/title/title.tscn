@@ -1,12 +1,11 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://scenes/title/title.gd" type="Script" id=1]
 [ext_resource path="res://assets/images/190824_back_ground_600x800_tile_set.png" type="Texture" id=2]
 [ext_resource path="res://assets/fonts/label_large.tres" type="DynamicFont" id=3]
 [ext_resource path="res://assets/images/lyre_logo_sprite.png" type="Texture" id=4]
-[ext_resource path="res://assets/styles/button_hover.tres" type="StyleBox" id=5]
-[ext_resource path="res://assets/styles/button_focus.tres" type="StyleBox" id=6]
-[ext_resource path="res://assets/styles/button_normal.tres" type="StyleBox" id=7]
+[ext_resource path="res://assets/styles/button_focus.tres" type="StyleBox" id=5]
+[ext_resource path="res://assets/styles/button_normal.tres" type="StyleBox" id=6]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://assets/fonts/alagard_by_pix3m-d6awiwp.ttf"
@@ -117,8 +116,8 @@ margin_bottom = 52.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/hover = ExtResource( 5 )
-custom_styles/focus = ExtResource( 6 )
-custom_styles/normal = ExtResource( 7 )
+custom_styles/focus = ExtResource( 5 )
+custom_styles/normal = ExtResource( 6 )
 custom_fonts/font = ExtResource( 3 )
 text = "Play"
 clip_text = true
@@ -130,8 +129,8 @@ margin_bottom = 124.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/hover = ExtResource( 5 )
-custom_styles/focus = ExtResource( 6 )
-custom_styles/normal = ExtResource( 7 )
+custom_styles/focus = ExtResource( 5 )
+custom_styles/normal = ExtResource( 6 )
 custom_fonts/font = ExtResource( 3 )
 custom_constants/hseparation = 0
 text = "Credits"
@@ -142,8 +141,8 @@ margin_top = 144.0
 margin_right = 180.0
 margin_bottom = 189.0
 custom_styles/hover = ExtResource( 5 )
-custom_styles/focus = ExtResource( 6 )
-custom_styles/normal = ExtResource( 7 )
+custom_styles/focus = ExtResource( 5 )
+custom_styles/normal = ExtResource( 6 )
 custom_fonts/font = ExtResource( 3 )
 text = "Quit"
 clip_text = true

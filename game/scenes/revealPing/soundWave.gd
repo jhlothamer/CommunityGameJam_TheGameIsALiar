@@ -10,6 +10,9 @@ export var mute : bool
 var current_radius : float = radius
 var active : bool = true
 
+export var random_pitch : bool
+export var pitch_scale : float = 1.0
+
 signal SoundWaveComplete()
 
 func _ready():
@@ -18,8 +21,11 @@ func _ready():
 	$Polygon2D.modulate = color
 	$Polygon2D2.modulate = color
 	if !mute:
-		randomize()
-		$AudioStreamPlayer2D.pitch_scale = rand_range(.6, 1.6)
+		if random_pitch:
+			randomize()
+			$AudioStreamPlayer2D.pitch_scale = rand_range(.6, 1.6)
+		else:
+			$AudioStreamPlayer2D.pitch_scale = pitch_scale
 		$AudioStreamPlayer2D.play()
 
 
