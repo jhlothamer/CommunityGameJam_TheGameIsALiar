@@ -28,7 +28,8 @@ func process_tile_map():
 
 func process_objects(object_layer):
 	for obj in object_layer.get_children():
-		var type = obj.get_meta("type")
+		var type = obj.name #obj.get_meta("type")
+		#print(type)
 		var new_object = null
 		
 		if type == "portal":
@@ -56,7 +57,7 @@ func get_level_bottom():
 		if tile_map is TileMap:
 			var rect = tile_map.get_used_rect()
 			var tile_height = tile_map.cell_size.y
-			var map_depth = (rect.position.y * tile_height) + (rect.size.y * tile_height)
+			var map_depth = (rect.position.y + rect.size.y ) * tile_height
 			if map_depth > depth:
 				depth = map_depth
 	return depth
