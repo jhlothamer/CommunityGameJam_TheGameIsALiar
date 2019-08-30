@@ -3,6 +3,7 @@ extends Node
 var current_state = null
 
 export var debug : bool
+export var disabled : bool
 
 func _ready():
 	var host = get_parent()
@@ -26,6 +27,8 @@ func change_state(state_name):
 	current_state.enter()
 
 func _physics_process(delta):
+	if disabled:
+		return
 	if current_state != null:
 		current_state.update(delta)
 
