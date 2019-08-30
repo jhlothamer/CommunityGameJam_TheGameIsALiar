@@ -12,6 +12,6 @@ transform = Transform2D( 1, 0, 0, 1, 0, 220 )
 [node name="tileMapPrepper" parent="." index="1"]
 tile_map_node = NodePath("../testLevel1")
 
-[node name="testLevel1" parent="." index="3" instance=ExtResource( 2 )]
+[node name="testLevel1" parent="." index="2" instance=ExtResource( 2 )]
 
 [editable path="testLevel1"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://scenes/player/player.gd" type="Script" id=1]
 [ext_resource path="res://assets/images/bard.png" type="Texture" id=2]
@@ -8,8 +8,10 @@
 [ext_resource path="res://assets/sounds/takeoff1.ogg" type="AudioStream" id=6]
 [ext_resource path="res://scenes/player/states/falling.gd" type="Script" id=7]
 [ext_resource path="res://assets/sounds/landing1.ogg" type="AudioStream" id=8]
-[ext_resource path="res://scenes/hud/hud.tscn" type="PackedScene" id=9]
-[ext_resource path="res://assets/fonts/text_regular.tres" type="DynamicFont" id=10]
+[ext_resource path="res://assets/sounds/falling.ogg" type="AudioStream" id=9]
+[ext_resource path="res://scenes/player/states/playing.gd" type="Script" id=10]
+[ext_resource path="res://scenes/hud/hud.tscn" type="PackedScene" id=11]
+[ext_resource path="res://assets/fonts/text_regular.tres" type="DynamicFont" id=12]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 9.12811, 15.2848 )
@@ -112,6 +114,7 @@ hframes = 11
 debug = false
 
 [node name="walking" type="Node" parent="stateMachine"]
+editor/display_folded = true
 script = ExtResource( 4 )
 is_starting_state = true
 
@@ -119,6 +122,7 @@ is_starting_state = true
 one_shot = true
 
 [node name="jumping" type="Node" parent="stateMachine"]
+editor/display_folded = true
 script = ExtResource( 5 )
 
 [node name="jumpTakeoffSound" type="AudioStreamPlayer" parent="stateMachine/jumping"]
@@ -130,13 +134,19 @@ script = ExtResource( 7 )
 
 [node name="landingSound" type="AudioStreamPlayer" parent="stateMachine/falling"]
 stream = ExtResource( 8 )
-volume_db = -15.0
+volume_db = -5.0
+
+[node name="fallingSound" type="AudioStreamPlayer" parent="stateMachine/falling"]
+stream = ExtResource( 9 )
+
+[node name="playing" type="Node" parent="stateMachine"]
+script = ExtResource( 10 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
 zoom = Vector2( 0.4, 0.4 )
 
-[node name="hud" parent="." instance=ExtResource( 9 )]
+[node name="hud" parent="." instance=ExtResource( 11 )]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/fall = SubResource( 2 )
@@ -151,11 +161,12 @@ margin_left = -20.0
 margin_top = -40.0
 margin_right = 20.0
 margin_bottom = -17.0
-custom_fonts/font = ExtResource( 10 )
+custom_fonts/font = ExtResource( 12 )
 custom_colors/font_color = Color( 0.921569, 1, 0, 1 )
 text = "??!!"
 align = 1
 
 [node name="alarmBlinkTimer" type="Timer" parent="."]
 [connection signal="timeout" from="stateMachine/walking/pingDebounceTimer" to="stateMachine/walking" method="_on_pingDebounceTimer_timeout"]
+[connection signal="finished" from="stateMachine/falling/fallingSound" to="stateMachine/falling" method="_on_fallingSound_finished"]
 [connection signal="timeout" from="alarmBlinkTimer" to="." method="_on_alarmBlinkTimer_timeout"]

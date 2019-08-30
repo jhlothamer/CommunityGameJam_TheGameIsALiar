@@ -5,7 +5,7 @@ export var number_of_segments : int = 35
 export var width : float = 20.0
 export var color : Color = Color.yellow
 export var speed : float = 400.0
-export var max_radius : float = 600.0
+export var max_radius : float = 300.0
 export var mute : bool
 var current_radius : float = radius
 var active : bool = true

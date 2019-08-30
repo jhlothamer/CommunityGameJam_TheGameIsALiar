@@ -10,9 +10,11 @@ func update(delta):
 		change_state("falling")
 		return
 	if Input.is_action_just_pressed("reveal_ping") && ping_allowed:
-		host.reveal_ping()
-		ping_allowed = false
-		$pingDebounceTimer.start()
+		change_state("playing")
+		return
+#		host.reveal_ping()
+#		ping_allowed = false
+#		$pingDebounceTimer.start()
 	if host.linear_velocity.x == 0.0:
 		host.play_anim("idle")
 	else:
