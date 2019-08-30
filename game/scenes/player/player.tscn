@@ -144,7 +144,7 @@ script = ExtResource( 10 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
-zoom = Vector2( 0.4, 0.4 )
+zoom = Vector2( 0.45, 0.45 )
 
 [node name="hud" parent="." instance=ExtResource( 11 )]
 

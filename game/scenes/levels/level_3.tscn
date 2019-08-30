@@ -8,4 +8,7 @@
 [node name="tileMapPrepper" parent="." index="1"]
 tile_map_node = NodePath("../level3")
 
+[node name="player" parent="." index="2"]
+position = Vector2( 92.0549, 304.142 )
+
 [node name="level3" parent="." index="4" instance=ExtResource( 2 )]
