@@ -71,6 +71,10 @@
 </data>
  </layer>
  <objectgroup name="objects">
-  <object id="12" name="portal" type="portal" gid="81" x="989" y="35" width="16" height="16"/>
+  <object id="12" name="portal" type="portal" gid="81" x="989" y="35" width="16" height="16">
+   <properties>
+    <property name="type" value="portal"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>

@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="80" height="16" tilewidth="16" tileheight="16" nextobjectid="93">
+ <tileset firstgid="1" source="lyre_of_truth.tsx"/>
+ <layer name="Tile Layer 1" width="80" height="16">
+  <properties>
+   <property name="z_index" type="int" value="2"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,1,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,2,3,2,2,3,2,3,0,0,0,2,3,3,2,3,2,3,2,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,3,4,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,22,23,24,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,61,62,63,64,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,6,7,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65,66,67,68,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+5,6,6,6,6,6,6,6,6,7,8,0,0,5,6,7,8,0,0,0,0,0,0,0,0,0,0,5,6,7,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+25,26,26,26,26,26,26,26,26,27,28,0,0,65,66,67,68,0,0,0,0,0,0,0,0,0,0,65,66,67,68,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+45,26,27,27,27,27,27,27,27,27,48,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="invisible" width="80" height="16">
+  <properties>
+   <property name="z_index" type="int" value="1"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,6,7,8,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65,66,67,68,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,6,7,8,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65,66,67,68,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,6,7,8,0,0,0,0,0,0,0,0,0,0,5,6,7,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65,66,67,68,0,0,0,0,0,0,0,0,0,0,65,66,67,68,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,6,7,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,6,7,8,0,0,0,0,0,0,0,0,65,66,67,68,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65,66,67,68,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="fake" width="80" height="16">
+  <properties>
+   <property name="z_index" type="int" value="0"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,6,7,8,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65,66,67,68,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,6,7,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,6,7,8,0,0,0,0,0,0,0,0,0,0,5,6,7,8,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65,66,67,68,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65,66,67,68,0,0,0,0,0,0,0,0,0,0,65,66,67,68,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,6,7,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,6,7,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65,66,67,68,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65,66,67,68,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup name="fake">
+  <object id="91" gid="82" x="145" y="216" width="16" height="16">
+   <properties>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="invisible">
+  <object id="92" gid="82" x="11" y="217" width="16" height="16">
+   <properties>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="objects">
+  <object id="29" name="portal" gid="81" x="1240" y="25" width="16" height="16">
+   <properties>
+    <property name="type" value="portal"/>
+   </properties>
+  </object>
+  <object id="30" name="spike" type="spike" gid="82" x="112" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="31" name="spike" type="spike" gid="82" x="128" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="32" name="spike" type="spike" gid="82" x="144" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="33" name="spike" type="spike" gid="82" x="160" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="34" name="spike" type="spike" gid="82" x="176" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="35" name="spike" type="spike" gid="82" x="192" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="36" name="spike" type="spike" gid="82" x="208" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="37" name="spike" type="spike" gid="82" x="224" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="38" name="spike" type="spike" gid="82" x="240" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="39" name="spike" type="spike" gid="82" x="256" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="40" name="spike" type="spike" gid="82" x="272" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="41" name="spike" type="spike" gid="82" x="288" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="42" name="spike" type="spike" gid="82" x="304" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="43" name="spike" type="spike" gid="82" x="320" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="44" name="spike" type="spike" gid="82" x="336" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="45" name="spike" type="spike" gid="82" x="352" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="46" name="spike" type="spike" gid="82" x="368" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="47" name="spike" type="spike" gid="82" x="400" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="48" name="spike" type="spike" gid="82" x="384" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="49" name="spike" type="spike" gid="82" x="416" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="50" name="spike" type="spike" gid="82" x="432" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="51" name="spike" type="spike" gid="82" x="448" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="52" name="spike" type="spike" gid="82" x="464" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="53" name="spike" type="spike" gid="82" x="480" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="54" name="spike" type="spike" gid="82" x="496" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="55" name="spike" type="spike" gid="82" x="512" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="56" name="spike" type="spike" gid="82" x="528" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="57" name="spike" type="spike" gid="82" x="544" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="58" name="spike" type="spike" gid="82" x="560" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="59" name="spike" type="spike" gid="82" x="576" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="60" name="spike" type="spike" gid="82" x="592" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="61" name="spike" type="spike" gid="82" x="608" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="62" name="spike" type="spike" gid="82" x="624" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="63" name="spike" type="spike" gid="82" x="640" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="64" name="spike" type="spike" gid="82" x="656" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="65" name="spike" type="spike" gid="82" x="672" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="66" name="spike" type="spike" gid="82" x="688" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="67" name="spike" type="spike" gid="82" x="704" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="68" name="spike" type="spike" gid="82" x="720" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="69" name="spike" type="spike" gid="82" x="736" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="70" name="spike" type="spike" gid="82" x="752" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="71" name="spike" type="spike" gid="82" x="768" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="72" name="spike" type="spike" gid="82" x="784" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="73" name="spike" type="spike" gid="82" x="800" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="74" name="spike" type="spike" gid="82" x="816" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="75" name="spike" type="spike" gid="82" x="832" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="76" name="spike" type="spike" gid="82" x="848" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="77" name="spike" type="spike" gid="82" x="864" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="78" name="spike" type="spike" gid="82" x="880" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="79" name="spike" type="spike" gid="82" x="896" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="80" name="spike" type="spike" gid="82" x="912" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="81" name="spike" type="spike" gid="82" x="928" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="82" name="spike" type="spike" gid="82" x="944" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="83" name="spike" type="spike" gid="82" x="960" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="84" name="spike" type="spike" gid="82" x="976" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="85" name="spike" type="spike" gid="82" x="992" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="86" name="spike" type="spike" gid="82" x="1008" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="87" name="spike" type="spike" gid="82" x="1024" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="88" name="spike" type="spike" gid="82" x="1040" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="89" name="spike" type="spike" gid="82" x="1056" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
