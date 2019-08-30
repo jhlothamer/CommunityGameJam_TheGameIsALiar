@@ -18,14 +18,14 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -171.0
-margin_top = -34.0
-margin_right = 224.0
-margin_bottom = 75.0
+margin_left = -362.5
+margin_top = -55.0
+margin_right = 362.5
+margin_bottom = 55.0
 custom_constants/separation = 20
 
 [node name="Label" type="Label" parent="VBoxContainer"]
-margin_right = 425.0
+margin_right = 725.0
 margin_bottom = 45.0
 custom_fonts/font = ExtResource( 2 )
 text = "Level Complete!"
@@ -33,12 +33,23 @@ align = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 65.0
-margin_right = 425.0
+margin_right = 725.0
 margin_bottom = 110.0
 custom_constants/separation = 20
 
-[node name="restartBtn" type="Button" parent="VBoxContainer/HBoxContainer"]
+[node name="continueBtn" type="Button" parent="VBoxContainer/HBoxContainer"]
 margin_right = 280.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 280, 0 )
+custom_styles/hover = ExtResource( 3 )
+custom_styles/focus = ExtResource( 3 )
+custom_styles/normal = ExtResource( 4 )
+custom_fonts/font = ExtResource( 2 )
+text = "Continue"
+
+[node name="restartBtn" type="Button" parent="VBoxContainer/HBoxContainer"]
+margin_left = 300.0
+margin_right = 580.0
 margin_bottom = 45.0
 rect_min_size = Vector2( 280, 0 )
 custom_styles/hover = ExtResource( 3 )
@@ -48,8 +59,8 @@ custom_fonts/font = ExtResource( 2 )
 text = "Play Again"
 
 [node name="quitBtn" type="Button" parent="VBoxContainer/HBoxContainer"]
-margin_left = 300.0
-margin_right = 425.0
+margin_left = 600.0
+margin_right = 725.0
 margin_bottom = 45.0
 rect_min_size = Vector2( 125, 0 )
 custom_styles/hover = ExtResource( 3 )
@@ -57,5 +68,6 @@ custom_styles/focus = ExtResource( 3 )
 custom_styles/normal = ExtResource( 4 )
 custom_fonts/font = ExtResource( 2 )
 text = "Menu"
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/continueBtn" to="." method="_on_continueBtn_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/restartBtn" to="." method="_on_restartBtn_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/quitBtn" to="." method="_on_quitBtn_pressed"]

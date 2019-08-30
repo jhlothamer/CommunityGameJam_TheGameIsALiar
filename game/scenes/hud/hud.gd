@@ -20,7 +20,7 @@ func _physics_process(delta):
 	if !accept_keys:
 		return
 	#if event.name == "ui_cancel" && event.pressed:
-	if Input.is_action_just_pressed("ui_cancel"):
+	if Input.is_action_just_pressed("ui_cancel") && !$playerDied.visible && !$levelComplete.visible:
 		accept_keys = false
 		$keyDebounceTimer.start()
 		if $pause.visible:
