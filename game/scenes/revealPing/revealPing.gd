@@ -38,13 +38,11 @@ func create_sound_wave():
 
 func on_SoundWaveComplete():
 	if get_child_count() <= 2:
-		call_deferred("emit_RevealPingComplete")
-
-func emit_RevealPingComplete():
-	emit_signal("RevealPingComplete")
-	queue_free()
+		call_deferred("queue_free")
 
 func _on_soundWaveGenerateTimer_timeout():
 	if wave_count >= max_wave_count:
+		$soundWaveGenerateTimer.stop()
+		emit_signal("RevealPingComplete")
 		return
 	create_sound_wave()
