@@ -23,6 +23,7 @@ config/icon="res://icon.png"
 
 MusicController="*res://scenes/util/MusicController.tscn"
 SignalMgr="*res://scenes/util/SignalMgr.gd"
+LevelMgr="*res://scenes/util/LevelMgr.gd"
 
 [debug]
 
