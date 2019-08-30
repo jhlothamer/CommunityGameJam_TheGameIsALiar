@@ -8,6 +8,10 @@ func _ready():
 
 func flip(down = true):
 	if down:
-		$Sprite.flip_v = true
+		rotation_degrees = 180.0
 	else:
-		$Sprite.flip_v = false
+		rotation_degrees = 0.0
+		
+func set_fake_collision():
+	$fatalFallArea.collision_layer = 2
+	$fatalFallArea.collision_mask = 2
