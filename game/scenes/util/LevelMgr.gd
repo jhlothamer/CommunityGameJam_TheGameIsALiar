@@ -10,6 +10,7 @@ var levels = [
 
 func _ready():
 	SignalMgr.register_subscriber(self, "NextLevel", "on_NextLevel")
+	SignalMgr.register_subscriber(self, "GotoLevel", "on_GotoLevel")
 
 func on_NextLevel():
 	current_level_index += 1
@@ -17,3 +18,7 @@ func on_NextLevel():
 		get_tree().change_scene("res://scenes/credits/credits.tscn")
 	else:
 		get_tree().change_scene(levels[current_level_index])
+
+func on_GotoLevel(level):
+	current_level_index = level - 1
+	on_NextLevel()
