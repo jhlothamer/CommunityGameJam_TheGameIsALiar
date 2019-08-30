@@ -17,5 +17,13 @@ func enter():
 	host.reveal_ping()
 
 func update(delta):
+	if Input.is_action_just_pressed("jump"):
+		change_state("jumping")
+		return
+	if Input.is_action_just_pressed("move_left") || Input.is_action_just_pressed("move_right"):
+		change_state("walking")
+		return
 	if ping_complete:
 		change_state("walking")
+
+
