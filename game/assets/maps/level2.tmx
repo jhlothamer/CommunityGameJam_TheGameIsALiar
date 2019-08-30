@@ -47,7 +47,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer name="fake" width="80" height="16" visible="0">
+ <layer name="fake" width="80" height="16">
   <properties>
    <property name="z_index" type="int" value="0"/>
   </properties>
@@ -108,6 +108,30 @@
    </properties>
   </object>
   <object id="63" name="spike" type="spike" gid="82" x="640" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="61" name="spike" type="spike" gid="82" x="608" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="47" name="spike" type="spike" gid="82" x="400" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="49" name="spike" type="spike" gid="82" x="416" y="48" width="16" height="16">
+   <properties>
+    <property name="flip" type="bool" value="true"/>
+    <property name="type" value="spike"/>
+   </properties>
+  </object>
+  <object id="44" name="spike" type="spike" gid="82" x="336" y="48" width="16" height="16">
    <properties>
     <property name="flip" type="bool" value="true"/>
     <property name="type" value="spike"/>
@@ -211,24 +235,6 @@
     <property name="type" value="spike"/>
    </properties>
   </object>
-  <object id="44" name="spike" type="spike" gid="82" x="336" y="48" width="16" height="16">
-   <properties>
-    <property name="flip" type="bool" value="true"/>
-    <property name="type" value="spike"/>
-   </properties>
-  </object>
-  <object id="47" name="spike" type="spike" gid="82" x="400" y="48" width="16" height="16">
-   <properties>
-    <property name="flip" type="bool" value="true"/>
-    <property name="type" value="spike"/>
-   </properties>
-  </object>
-  <object id="49" name="spike" type="spike" gid="82" x="416" y="48" width="16" height="16">
-   <properties>
-    <property name="flip" type="bool" value="true"/>
-    <property name="type" value="spike"/>
-   </properties>
-  </object>
   <object id="50" name="spike" type="spike" gid="82" x="432" y="48" width="16" height="16">
    <properties>
     <property name="flip" type="bool" value="true"/>
@@ -278,12 +284,6 @@
    </properties>
   </object>
   <object id="58" name="spike" type="spike" gid="82" x="560" y="48" width="16" height="16">
-   <properties>
-    <property name="flip" type="bool" value="true"/>
-    <property name="type" value="spike"/>
-   </properties>
-  </object>
-  <object id="61" name="spike" type="spike" gid="82" x="608" y="48" width="16" height="16">
    <properties>
     <property name="flip" type="bool" value="true"/>
     <property name="type" value="spike"/>
