@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes/levels/level.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/maps/screenShot1.tmx" type="PackedScene" id=2]
+[ext_resource path="res://scenes/util/ScreenShotMgr.tscn" type="PackedScene" id=3]
+
+[node name="screenShot1" instance=ExtResource( 1 )]
+skip_camera_setup = true
+
+[node name="tileMapPrepper" parent="." index="1"]
+tile_map_node = NodePath("../screenShot1")
+
+[node name="player" parent="." index="2"]
+position = Vector2( 502.995, 139.954 )
+
+[node name="screenShot1" parent="." index="4" instance=ExtResource( 2 )]
+position = Vector2( -8.9317, 62.428 )
+
+[node name="ScreenShotMgr" parent="." index="5" instance=ExtResource( 3 )]
+resize_factor = 0.25
+enabled = true

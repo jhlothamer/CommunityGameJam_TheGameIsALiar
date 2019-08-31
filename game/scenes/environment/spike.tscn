@@ -1,13 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://scenes/environment/spike.gd" type="Script" id=1]
 [ext_resource path="res://assets/images/spike.png" type="Texture" id=2]
-[ext_resource path="res://scenes/environment/fatalFallArea.tscn" type="PackedScene" id=3]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 8, 8 )
-
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=1]
 resource_name = "default"
 length = 0.5
 loop = true
@@ -24,7 +20,7 @@ tracks/0/keys = {
 "values": [ 0, 1, 2, 3, 4 ]
 }
 
-[node name="spike" type="Node2D"]
+[node name="spike" type="Area2D"]
 script = ExtResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -33,14 +29,10 @@ texture = ExtResource( 2 )
 hframes = 5
 frame = 4
 
-[node name="fatalFallArea" parent="." instance=ExtResource( 3 )]
-editor/display_folded = true
-
-[node name="CollisionShape2D" parent="fatalFallArea" index="0"]
-shape = SubResource( 1 )
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "default"
-anims/default = SubResource( 2 )
+anims/default = SubResource( 1 )
 
-[editable path="fatalFallArea"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -5.36904, 6.99944, 6.18041, 7.07254, 0.55188, -6.30435 )
+[connection signal="body_entered" from="." to="." method="_on_spike_body_entered"]
