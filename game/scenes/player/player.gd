@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-var reveal_ping_class = preload("res://scenes/revealPing/revealPing.tscn")
+var reveal_ping_class = preload("res://scenes/revealPing/revealPing2.tscn")
 
 var gravity_vector = Vector2(0, 900)
 var floor_normal = Vector2.UP
@@ -39,7 +39,8 @@ func process_horizontal_movement(delta):
 		target_speed += 1
 		face_direction = 1
 	target_speed *= walk_speed
-	linear_velocity.x = target_speed
+	#linear_velocity.x = target_speed
+	linear_velocity.x = lerp(linear_velocity.x, target_speed, .2)
 	$Sprite.flip_h = face_direction < 0
 
 func jump():

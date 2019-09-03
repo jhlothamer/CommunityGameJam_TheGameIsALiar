@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/revealPing/revealPing2.gd" type="Script" id=1]
+
+[node name="revealPing2" type="Node2D"]
+z_index = 2
+script = ExtResource( 1 )
+
+[node name="soundWaveGenerateTimer" type="Timer" parent="."]
+[connection signal="timeout" from="soundWaveGenerateTimer" to="." method="_on_soundWaveGenerateTimer_timeout"]
