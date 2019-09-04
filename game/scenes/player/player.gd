@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-var reveal_ping_class = preload("res://scenes/revealPing/revealPing2.tscn")
+var reveal_ping_class = preload("res://scenes/revealPing/revealPing.tscn")
 
 var gravity_vector = Vector2(0, 900)
 var floor_normal = Vector2.UP

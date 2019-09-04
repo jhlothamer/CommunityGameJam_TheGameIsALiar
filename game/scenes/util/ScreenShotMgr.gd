@@ -1,31 +1,32 @@
 extends Node
 
-var allow_input : bool = true
-var take_screen_shots : bool = false
-var directory_name : String = ""
-var file_counter : int = 0
-export (int, 1, 100000) var file_counter_max : int = 1000
+export (int, 1, 100000) var screenshot_count_max : int = 1000
 export (float, 0.0, 2.0) var resize_factor : float = 1.0
 export var enabled : bool
+export var screenshot_action_name : String = "screen_shot"
+
+var allow_input : bool = true
+var take_screenshots : bool = false
+var directory_name : String = ""
+var file_counter : int = 0
 var user_data_directory : Directory = Directory.new()
 
 func _ready():
 	user_data_directory.open("user://")
 
-
 func _input(event):
-	if !allow_input || !Input.is_action_just_pressed("screen_shot"):
+	if !allow_input || !Input.is_action_just_pressed(screenshot_action_name):
 		return
 	allow_input = false
 	$inputDebounceTimer.start()
-	take_screen_shots = !take_screen_shots
-	if take_screen_shots:
+	take_screenshots = !take_screenshots
+	if take_screenshots:
 		directory_name = get_date_time_string()
 		file_counter = 0
 		user_data_directory.make_dir(directory_name)
 		print("starting screenshots")
 	else:
-		print("stopping screenshots with " + String(file_counter) + " shots taken")
+		print("stopping screenshots with " + String(file_counter) + " shots taken.")
 
 func _on_inputDebounceTimer_timeout():
 	allow_input = true
@@ -40,7 +41,11 @@ func i_to_padded(i : int, digits: int) -> String:
 
 
 func _process(delta):
-	if !take_screen_shots || file_counter >= file_counter_max:
+	if !take_screenshots:
+		return
+	if file_counter >= screenshot_count_max:
+		take_screenshots = false
+		print("Max screenshots reached.  Stopping screenshots with " + String(file_counter) + " shots taken.")	
 		return
 
 	var image = get_viewport().get_texture().get_data()
