@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-var reveal_ping_class = preload("res://scenes/revealPing/revealPing2.tscn")
+var reveal_ping_class = preload("res://scenes/revealPing/revealPing.tscn")
 
 var gravity_vector = Vector2(0, 900)
 var floor_normal = Vector2.UP
@@ -19,6 +19,8 @@ export var disabled : bool
 export var mute: bool
 
 var linear_velocity = Vector2()
+var horizontal_acceleration = walk_speed*.02
+var vertical_acceleration = jump_speed*.04
 
 func _ready():
 	if disabled:
@@ -33,18 +35,29 @@ func process_move_and_slide(delta):
 func process_horizontal_movement(delta):
 	var target_speed = 0
 	if Input.is_action_pressed("move_left"):
-		target_speed -= 1
+		target_speed = -1
 		face_direction = -1
 	if Input.is_action_pressed("move_right"):
-		target_speed += 1
+		target_speed = 1
 		face_direction = 1
-	target_speed *= walk_speed
-	#linear_velocity.x = target_speed
-	linear_velocity.x = lerp(linear_velocity.x, target_speed, .2)
+	var acceleration = walk_speed * horizontal_acceleration * delta
+	if target_speed > 0:
+		linear_velocity.x = min(walk_speed, linear_velocity.x + acceleration)
+	elif target_speed < 0:
+		linear_velocity.x = max(-walk_speed, linear_velocity.x - acceleration)
+	elif linear_velocity.x != 0.0:
+		var current_sign = sign(linear_velocity.x)
+		linear_velocity.x += -current_sign * acceleration
+		if sign(linear_velocity.x) != current_sign:
+			linear_velocity.x = 0
+
 	$Sprite.flip_h = face_direction < 0
 
-func jump():
-	linear_velocity.y -= jump_speed
+func jump(delta):
+	var acceleration = jump_speed * vertical_acceleration * delta
+	linear_velocity.y = max(jump_speed, linear_velocity.y + acceleration)
+	return linear_velocity.y == jump_speed
+	#linear_velocity.y -= jump_speed
 
 func reveal_ping():
 	var reveal_ping = reveal_ping_class.instance()
