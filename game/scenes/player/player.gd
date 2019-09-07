@@ -2,11 +2,11 @@ extends KinematicBody2D
 
 var reveal_ping_class = preload("res://scenes/revealPing/revealPing.tscn")
 
-var gravity_vector = Vector2(0, 900)
+var gravity_vector = Vector2(0, 700) #900
 var floor_normal = Vector2.UP
 var sloap_slide_stop = 25.0
 var walk_speed = 300
-var jump_speed = 450
+var jump_speed = 400 #450
 #positive = right, negative = left
 var face_direction : int = 1
 
