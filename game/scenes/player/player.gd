@@ -6,7 +6,7 @@ var gravity_vector = Vector2(0, 900)
 var floor_normal = Vector2.UP
 var sloap_slide_stop = 25.0
 var walk_speed = 300
-var jump_speed = 350 # 450
+var jump_speed = 450
 #positive = right, negative = left
 var face_direction : int = 1
 
@@ -53,11 +53,8 @@ func process_horizontal_movement(delta):
 
 	$Sprite.flip_h = face_direction < 0
 
-func jump(delta):
-	var acceleration = vertical_acceleration * delta
-	linear_velocity.y = max(-jump_speed, linear_velocity.y - acceleration)
-	return linear_velocity.y != -jump_speed
-	#linear_velocity.y -= jump_speed
+func jump():
+	linear_velocity.y -= jump_speed
 
 func reveal_ping():
 	var reveal_ping = reveal_ping_class.instance()
